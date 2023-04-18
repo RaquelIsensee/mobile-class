@@ -3,9 +3,9 @@ package com.example.myapplication.ui.theme
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.BottomNavigation
-import androidx.compose.material.Scaffold
-import androidx.compose.material.Text
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
@@ -16,9 +16,16 @@ fun Form2Screen(param : String?) {
     Scaffold(
         bottomBar={
         BottomNavigation() {
-
+        BottomNavigationItem(
+            selected = true,
+            onClick = { /*TODO*/ },
+            label={
+               Text(text = "Tela 1")
+           },
+            Icon(Icons.Filled.AccountBox, contentDescription = "")
         }
-    }) {
+    })
+    {
 
     }
 
